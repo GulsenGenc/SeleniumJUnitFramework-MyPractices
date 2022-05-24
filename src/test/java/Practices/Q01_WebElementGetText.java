@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Q1 {
+public class Q01_WebElementGetText{
     // BeforeClass ile driver ı olusturun ve class icinde static yapin
     //    Maximize edin, 15 sn bekletin
 

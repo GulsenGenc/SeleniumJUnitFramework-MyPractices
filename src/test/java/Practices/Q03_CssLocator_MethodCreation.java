@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.List;
 
-public class Q3 {
+public class  Q03_CssLocator_MethodCreation {
     /*
    // http://the-internet.herokuapp.com/add_remove_elements/
    // click on the "Add Element" button 100 times

@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.time.Duration;
 import java.util.List;
 
-public class Q6 {
+public class  Q06_DropDown{
      /*
    // 1. Amazon.com'a gidelim.
    // 2. DropDown üzerinde Books secelim.(All yazan yerde)

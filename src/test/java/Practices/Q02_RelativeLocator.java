@@ -10,7 +10,7 @@ import org.openqa.selenium.support.locators.RelativeLocator;
 
 import java.time.Duration;
 
-public class Q2 {
+public class  Q02_RelativeLocator {
     /*
    http://www.bestbuy.com 'a gidin,
    Sayfa basliginin "Best" icerdigini(contains) dogrulayin
