@@ -19,8 +19,8 @@ public class WindowHandleHomeWork extends TestBase {
         String ilkWindowHandle= driver.getWindowHandle();
 
         //2."Login Portal" a kadar asagi inin
-       // Actions actions=new Actions(driver);
-       // actions.keyDown(Keys.PAGE_DOWN).keyUp(Keys.PAGE_DOWN).perform();
+        Actions actions=new Actions(driver);
+        actions.keyDown(Keys.PAGE_DOWN).keyUp(Keys.PAGE_DOWN).perform();
 
         //3."Login Portal" a tiklayin
         driver.findElement(By.xpath("(//h4)[2]")).click();

@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.List;
 
 public class IframeTest_02 {
     WebDriver driver;
@@ -33,9 +34,11 @@ public class IframeTest_02 {
         driver.get("http://demo.guru99.com/test/guru99home/");
 
         //2) sayfadaki iframe sayısını bulunuz.
-        WebElement iFrameElementi =driver.findElement(By.name("googlefcPresent"));
-        System.out.println(iFrameElementi.getSize());
+        List<WebElement> frame=driver.findElements(By.xpath("//iframe"));
+        System.out.println(frame.size());
+
         //3)ilk iframe'deki (Youtube) play butonuna tıklayınız.
+        frame.get(0).click();
 
         //4)ilk iframe'den çıkıp ana sayfaya dönünüz
 
