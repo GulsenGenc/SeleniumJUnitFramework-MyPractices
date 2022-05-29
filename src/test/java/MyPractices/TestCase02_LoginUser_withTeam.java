@@ -2,7 +2,6 @@ package MyPractices;
 
 public class TestCase02_LoginUser_withTeam {
 
-    // Test Case 2: Login User with correct email and password
     // 1. Launch browser
     //1. browseri baslatin
 

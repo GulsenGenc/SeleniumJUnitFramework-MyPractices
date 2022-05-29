@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class TestBase {
-    // abstract yapmamizin sebebi, bu class'dan obje uretilmesinin onune gecmektir.
     protected WebDriver driver;
     @Before
     public void setUp(){
@@ -21,6 +20,7 @@ public class TestBase {
 
     @After
     public void tearDown(){
-      driver.quit();
+
+        driver.quit();
     }
 }

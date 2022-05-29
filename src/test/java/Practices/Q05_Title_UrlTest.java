@@ -44,6 +44,7 @@ public class  Q05_Title_UrlTest{
 
     @Test
     public void test02(){
+        //Amazon'a gidelim ve url in www.amazon.com icerip icermedigini dogrulayalim
         driver.get("https://www.amazon.com");
         String actualUrl= driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("www.amazon.com"));

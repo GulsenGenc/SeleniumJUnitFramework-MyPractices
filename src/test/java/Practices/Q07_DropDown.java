@@ -19,11 +19,11 @@ public class Q07_DropDown extends TestBase {
         driver.get("https://www.jqueryscript.net/demo/Drop-Down-Combo-Tree/");
 
         //-->Task1 Find Dropdown on Multi Selection
-        WebElement birinciDdm=driver.findElement(By.xpath("//input[@id='justAnInputBox']"));
+        WebElement birinciDdm=driver.findElement(By.xpath("(//span[@class='comboTreeArrowBtnImg'])[1]"));
 
         //-->Task2 Find  all Dropdown Elements on page
-        WebElement ikinciDdm= driver.findElement(By.xpath("//input[@id='justAnInputBox1']"));
-        WebElement ucuncuDdm= driver.findElement(By.xpath("//input[@id='justAnotherInputBox']"));
+        WebElement ikinciDdm= driver.findElement(By.xpath("(//span[@class='comboTreeArrowBtnImg'])[2]"));
+        WebElement ucuncuDdm= driver.findElement(By.xpath("(//span[@class='comboTreeArrowBtnImg'])[3]"));
 
         //-->Task3 printout DropDown Elements' number
         Select select=new Select(birinciDdm);

@@ -39,7 +39,7 @@ public class  Q06_DropDown{
 
     @AfterClass
     public static void tearDown() {
-        //driver.close();
+        driver.close();
     }
 
     @Test

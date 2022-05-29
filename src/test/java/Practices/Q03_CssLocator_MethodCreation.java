@@ -49,13 +49,34 @@ public class  Q03_CssLocator_MethodCreation {
         }
     }
 
-    @Test
-    public void test02() {
-        //AddElement butonuna 100 defa tıklama sonucu çıkan delete butonlarına tıklayalım
-        List<WebElement> deleteButtonları = driver.findElements(By.xpath("//button[@onclick='deleteElement()']"));
+    private static void deleteButtonsAndValidate(WebDriver driver, int number) {
+        List<WebElement> elements = driver.findElements(By.cssSelector("[onclick= 'deleteElement()']"));
+        int sizebeforeDelete = elements.size();
 
-        for (int i = 0; i < deleteButtonları.size(); i++) {
-            deleteButtonları.get(i).click();
+        List<WebElement> buttonsDelete = driver.findElements(By.cssSelector("[onclick= 'deleteElement()']"));
+        int sayac= 0;
+
+        for (WebElement w :buttonsDelete){ //silecegim webelemente click yapiyorum
+            sayac ++;
+            if(sayac>number){
+                break;
+            }
+            w.click();
         }
+
+        List<WebElement> elementsAfter = driver.findElements(By.cssSelector("[onclick= 'deleteElement()']"));
+        int sizeafterDelete = elementsAfter.size();//sildikten sonra kalanlar
+
+        if((sizebeforeDelete-number)==sizeafterDelete){
+            System.out.println("sizeafterDelete = " + sizeafterDelete);
+            System.out.println("SUCCESS");
+        }else
+            System.out.println("FAIL!");
+
+
     }
+
+
+
+
 }
